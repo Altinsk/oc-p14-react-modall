@@ -1,61 +1,59 @@
 {
   "name": "react-modal-wow",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.9",
   "type": "module",
-  "main": "dist/index.umd.js",
-  "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
-  "description": "React Modal",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "sass": "sass --watch ./src/assets/scss/main.scss:./src/assets/style.css",
+    "docs": "jsdoc -c jsdoc.conf.json"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react-swc": "^3.6.0",
+    "better-docs": "^2.7.3",
+    "jsdoc": "^4.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.69.5",
+    "vite-plugin-css-injected-by-js": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10",
+    "vite-plugin-dts": "^3.6.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "description": "A react modal library",
+  "main": "./dist/react-modall.umd.js",
+  "module": "./dist/react-modall.es.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/react-sweet-modal.es.js",
-      "require": "./dist/react-sweet-modal.umd.js"
+      "import": "./dist/react-modall.es.js",
+      "require": "./dist/react-modall.umd.js"
     },
     "./dist/style.css": "./dist/style.css",
     "./dist/index.d.ts": "./dist/index.d.ts"
   },
-  "files": [
-    "/dist"
-  ],
   "repository": {
     "type": "git",
     "url": ""
   },
   "keywords": [
-    "react",
-    "modal"
+    ""
   ],
-  "author": "Omar Rabie",
-  "license": "MIT",
-  "homepage": "https",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "prepare": "npm run build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "vite-plugin-css-injected-by-js": "^3.4.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
-    "@typescript-eslint/eslint-plugin": "^6.14.0",
-    "@typescript-eslint/parser": "^6.14.0",
-    "@vitejs/plugin-react-swc": "^3.5.0",
-    "eslint": "^8.55.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
-    "sass": "^1.70.0",
-    "typescript": "^5.2.2",
-    "vite": "^5.0.8",
-    "vite-plugin-dts": "^3.7.2"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+  "author": "",
+  "license": ""
 }

@@ -1,1 +1,0 @@
-export {ModalScaffold} from "./src/components/ModalScaffold"

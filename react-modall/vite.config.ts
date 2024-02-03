@@ -11,7 +11,7 @@ export default defineConfig({
     sourcemap: true,
     lib: {
       entry: path.resolve(__dirname, 'src/lib/index.ts'),
-      name: 'react-modall',
+      name: 'react-modall', 
       fileName: (format) => `react-modall.${format}.js`
     },
     rollupOptions: {
