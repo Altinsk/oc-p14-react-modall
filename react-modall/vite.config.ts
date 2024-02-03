@@ -11,8 +11,8 @@ export default defineConfig({
     sourcemap: true,
     lib: {
       entry: path.resolve(__dirname, 'src/lib/index.ts'),
-      name: 'react-modal-wow',
-      fileName: (format) => `react-modal-wow.${format}.js`
+      name: 'react-modall',
+      fileName: (format) => `react-modall.${format}.js`
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
