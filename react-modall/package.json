@@ -1,7 +1,7 @@
 {
   "name": "react-modal-wow",
   "private": false,
-  "version": "0.0.9",
+  "version": "0.0.10",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -52,8 +52,9 @@
     "url": ""
   },
   "keywords": [
-    ""
+    "React",
+    "modal"
   ],
-  "author": "",
-  "license": ""
+  "author": "Altinsk",
+  "license": "MIT"
 }
