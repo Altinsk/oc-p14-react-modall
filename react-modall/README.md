@@ -18,6 +18,10 @@ The modal contains:
 npm i react-modal-wow
 ```
 
+## Versions
+
+- Node version: v18.16.1
+
 ## Documentation
 
 After installing the package on your dependencies,
